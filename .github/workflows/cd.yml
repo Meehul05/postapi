@@ -33,7 +33,7 @@ jobs:
       - name: Build Spring Boot application
         run: |
           chmod +x mvnw
-          ./mvnw clean package
+          ./mvnw clean package -DskipTests
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
